@@ -22,3 +22,5 @@ jobs:
     steps: 
       - name: "Checking Envs"
         run: echo "$Greeting $First_Name. Today is $DAY_OF_WEEK!"
+      - name: "env var"
+        run: echo "${{ vars.JOB_NAME }}"
